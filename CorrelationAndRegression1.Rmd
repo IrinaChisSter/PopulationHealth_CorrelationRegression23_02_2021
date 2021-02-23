@@ -59,8 +59,9 @@ editor_options:
 -   Computationally quick and easy
 
 -   Tailored to the statistical nature of the variable of interest - the
-    outcome/response/dependent variable Tailored to the inherited
-    dependencies in the data
+    outcome/response/dependent variable
+
+-   Tailored to the inherited dependencies in the data
 
 -   In well designed studies and successful data collection (a well
     designed and conducted clinical trial) - they can have confirmatory
@@ -278,6 +279,7 @@ ggplot(mydata, aes(x=bpsystol, color=sex) ) +
 ## CORRELATION between SBP and DBP
 
 ```{r}
+help(cor.test)
 pearson <- cor.test(mydata$bpsystol, mydata$bpdiast,  method = "pearson")
 pearson
 
@@ -317,12 +319,12 @@ pairs(newdata,                     # Data frame of variables
       cex.labels = NULL,           # Size of the diagonal text
       font.labels = 1)             # Font style of the diagonal text
 
-
-groups <- mydata[, 3] # Factor variable (groups)
+names(mydata)
+groups <- mydata[, 4] # Factor variable (groups)
 pairs(newdata,                     # Data frame of variables
       labels = colnames(newdata),  # Variable names
       pch = 21,                    # Pch symbol
-      cex=0.2,                     # Pch size
+      cex=0.01,                   # Pch size
       bg = rainbow(3)[groups],     # Background color of the symbol (pch 21 to 25)
       col = rainbow(3)[groups],    # Border color of the symbol
       main = "Survey dataset",     # Title of the plot
