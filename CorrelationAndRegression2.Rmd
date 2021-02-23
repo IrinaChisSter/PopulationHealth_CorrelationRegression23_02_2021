@@ -1,5 +1,5 @@
 ---
-title: "Correlation and Simple Linear Regression 2"  
+title: "Correlation and Regression 2"  
 author: "Dr Irina Chis Ster"
 date: "21/01/2021"
 output:
@@ -157,6 +157,9 @@ knitr::opts_chunk$set(echo = TRUE)
         (b0)
 
 ```{r}
+##reading the data in
+mydata <-read.table("SurveyUS_data2018_selected.txt", header=T, sep="\t")
+##fit the regression
 reg_SBPonAGE<-lm(formula = mydata$bpsystol~mydata$age, data = mydata)
 summary(reg_SBPonAGE)
 confint(reg_SBPonAGE)
@@ -288,7 +291,7 @@ ggplot(dat_pred_reg_SBPonAGE, aes(x =age , y =bpsystol) ) +
 ##produce predictions for future values of age
 pred_reg_SBPonAGE_alt=data.frame(mydata, predict(reg_SBPonAGE, interval="prediction"))
 
-ggplot(pred_reg_BMIonAGE_alt, aes(x =age , y =bmi)) + 
+ggplot(pred_reg_SBPonAGE_alt, aes(x =age , y =bpsystol)) + 
     geom_ribbon(aes(ymin = lwr, ymax = upr, fill='prediction'), 
         fill = "black", alpha = 0.2) +
     geom_smooth(method = "lm", se = FALSE, col = "black") +
@@ -614,9 +617,6 @@ ggplot(mydata, aes(x=race, y=bpsystol, fill=sex)) +
 ggplot(mydata, aes(x=sex, y=bpsystol, fill=race)) + 
     geom_boxplot()
 
-fit <- lm(mydata$bpsystol~mydata$race+mydata$sex, data =mydata)
-help(plot_model)
-plot_model(fit, type = "int")
 
 ##INFERENTIAL PLOTS
 
