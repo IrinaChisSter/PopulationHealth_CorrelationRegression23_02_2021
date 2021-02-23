@@ -316,6 +316,14 @@ Assuming all assumptions are reasonably met
 
 ## An example on a smaller data set for the difference between the prediction interval and confidence interval for the mean
 
+Data source: Medley and Clements (1998) studied the response of diatom
+communities to presence of heavy metals, especially zinc. They sampled a
+number of stations (between 4 and 7) on six streams known to be polluted
+by heavy metals in the Rocky Mountain region of Colorado, USA. They
+recorded zinc concentration, species richness and species diversity of
+the diatom community and proportion of diatom cells that were
+early-successional species, Achanthes minutissima.
+
 ```{r, echo=FALSE}
 mydata_species <-read.table("ANOVA_example.txt", header=T, sep="\t")
 mydata_species

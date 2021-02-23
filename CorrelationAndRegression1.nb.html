@@ -368,53 +368,105 @@ summary {
 <h3>Reading the data in R</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyNyZWFkaW5nIHRoZSBkYXRhIGluXG5teWRhdGEgPC1yZWFkLnRhYmxlKFwiU3VydmV5VVNfZGF0YTIwMThfc2VsZWN0ZWQudHh0XCIsIGhlYWRlcj1ULCBzZXA9XCJcXHRcIilcbmBgYCJ9 -->
-<pre class="r"><code>##reading the data in
-mydata &lt;-read.table(&quot;SurveyUS_data2018_selected.txt&quot;, header=T, sep=&quot;\t&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="data-dimension-number-of-rows-and-variables" class="section level3">
-<h3>Data dimension (number of rows and variables)</h3>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyNkaXNwbGF5IHlvdXIgZGF0YSBzaXplXG5kaW0obXlkYXRhKVxuYGBgIn0= -->
-<pre class="r"><code>##display your data size
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyNyZWFkaW5nIHRoZSBkYXRhIGluXG5teWRhdGEgPC1yZWFkLnRhYmxlKFxcU3VydmV5VVNfZGF0YTIwMThfc2VsZWN0ZWQudHh0XFwsIGhlYWRlcj1ULCBzZXA9XFxcXHRcXClcbmBgYFxuYGBgIn0= -->
+<pre class="r"><code>```r
+##reading the data in
+mydata &lt;-read.table(\SurveyUS_data2018_selected.txt\, header=T, sep=\\t\)</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+### Data dimension (number of rows and variables)
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyNkaXNwbGF5IHlvdXIgZGF0YSBzaXplXG5kaW0obXlkYXRhKVxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+##display your data size
 dim(mydata)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="variables-names" class="section level3">
-<h3>Variables’ names</h3>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyNkaXNwbGF5IHRoZSBuYW1lcyBvZiB0aGUgdmFyaWFibGVzXG4jI1BsZWFzZSBzZWUgYSBtb3JlIGRldGFpbGVkIGRvY3VtZW50YXRpb24gaW4gdGhlIHdvcmQgZG9jdW1lbnRcbm5hbWVzKG15ZGF0YSlcbmBgYCJ9 -->
-<pre class="r"><code>##display the names of the variables
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+### Variables&#39; names
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyNkaXNwbGF5IHRoZSBuYW1lcyBvZiB0aGUgdmFyaWFibGVzXG4jI1BsZWFzZSBzZWUgYSBtb3JlIGRldGFpbGVkIGRvY3VtZW50YXRpb24gaW4gdGhlIHdvcmQgZG9jdW1lbnRcbm5hbWVzKG15ZGF0YSlcbmBgYFxuYGBgIn0= --&gt;
+
+```r
+```r
+##display the names of the variables
 ##Please see a more detailed documentation in the word document
 names(mydata)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="summary-of-the-data-at-hand" class="section level3">
-<h3>Summary of the data at hand</h3>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyNMZXQncyBzdW1tYXJpemUgdGhlIGRhdGEgdG8gZ2V0IGEgZmxhdm9yIG9mIHRoZWlyIG5hdHVyZVxuc3VtbWFyeShteWRhdGEpXG5gYGAifQ== -->
-<pre class="r"><code>##Let&#39;s summarize the data to get a flavor of their nature
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+### Summary of the data at hand
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyNMZXQncyBzdW1tYXJpemUgdGhlIGRhdGEgdG8gZ2V0IGEgZmxhdm9yIG9mIHRoZWlyIG5hdHVyZVxuc3VtbWFyeShteWRhdGEpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+##Let&#39;s summarize the data to get a flavor of their nature
 summary(mydata)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="visual-assessment" class="section level3">
-<h3>Visual assessment</h3>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyNMZXQncyBzdW1tYXJpemUgdGhlIHN5c3RvbGljIGJsb29kIHByZXNzdXJlIGJ5IHJhY2VcbnN1bW1hcnk8LWRkcGx5KG15ZGF0YSwgXCJyYWNlXCIsIHN1bW1hcmlzZSwgXG4gICAgICAgICAgICAgICBncnAubWVhbj1tZWFuKGJwc3lzdG9sKSxcbiAgICAgICAgICAgICAgIGdycC5zZD1zZChicHN5c3RvbCksXG4gICAgICAgICAgICAgICBncnAubWVkaWFuPW1lZGlhbihicHN5c3RvbCksIFxuICAgICAgICAgICAgICAgZ3JwLnF1YW50MjU9cXVhbnRpbGUoYnBzeXN0b2wsIGMoLjI1KSksIFxuICAgICAgICAgICAgICAgZ3JwLnF1YW50NzU9cXVhbnRpbGUoYnBzeXN0b2wsIGMoLjc1KSksIFxuICAgICAgICAgICAgICAgZ3JwLm1pbj1taW4oYnBzeXN0b2wpLCBcbiAgICAgICAgICAgICAgIGdycC5tYXg9bWF4KGJwc3lzdG9sKSxcbiAgICAgICAgICAgICAgIGdycC5jb3VudD0gbGVuZ3RoKGJwc3lzdG9sKSlcbnN1bW1hcnlcbiMjdGhpcyBsaW5lIHByb2R1Y2VzIHRoZSBzY2llbmNlIHNjb3JlIG1lYW5zIGFjcm9zcyBncm91cHMgYW5kIHN0b3JlcyB0aGVtIGluIHRoZSBncnAubWVhblxubXUgPC0gZGRwbHkobXlkYXRhLCBcInJhY2VcIiwgc3VtbWFyaXNlLCBncnAubWVhbj1tZWFuKGJwc3lzdG9sKSlcblxuIyN0aGlzIGxpbmUgZGlzcGxheXMgdGhlIDMgbWVhbnNcbmhlYWQobXUpXG5cblxuZ2dwbG90KG15ZGF0YSwgYWVzKHg9YnBzeXN0b2wsIGNvbG9yPXJhY2UpICkgK1xuICBnZW9tX2hpc3RvZ3JhbShmaWxsPVwid2hpdGVcIiwgcG9zaXRpb249XCJkb2RnZVwiKStcbiAgZ2VvbV92bGluZShkYXRhPW11LCBhZXMoeGludGVyY2VwdD1ncnAubWVhbiwgY29sb3I9cmFjZSksIGxpbmV0eXBlPVwiZGFzaGVkXCIpK1xuICB0aGVtZShsZWdlbmQucG9zaXRpb249XCJ0b3BcIikrXG4gIGd1aWRlcyhjb2xvcj1ndWlkZV9sZWdlbmQoXCJTQlA6XCIpKStcbiAgbGFicyh0aXRsZSA9IFwiU0JQIGJ5IGV0aG5pYyBncm91cFwiLCB5ID0gXCJGcmVxdWVuY3lcIiwgeD1cIlNCUFwiKSBcblxuYGBgIn0= -->
-<pre class="r"><code>##Let&#39;s summarize the systolic blood pressure by race
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+### Visual assessment
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyNMZXQncyBzdW1tYXJpemUgdGhlIHN5c3RvbGljIGJsb29kIHByZXNzdXJlIGJ5IHJhY2VcbnN1bW1hcnk8LWRkcGx5KG15ZGF0YSwgXCJyYWNlXCIsIHN1bW1hcmlzZSwgXG4gICAgICAgICAgICAgICBncnAubWVhbj1tZWFuKGJwc3lzdG9sKSxcbiAgICAgICAgICAgICAgIGdycC5zZD1zZChicHN5c3RvbCksXG4gICAgICAgICAgICAgICBncnAubWVkaWFuPW1lZGlhbihicHN5c3RvbCksIFxuICAgICAgICAgICAgICAgZ3JwLnF1YW50MjU9cXVhbnRpbGUoYnBzeXN0b2wsIGMoLjI1KSksIFxuICAgICAgICAgICAgICAgZ3JwLnF1YW50NzU9cXVhbnRpbGUoYnBzeXN0b2wsIGMoLjc1KSksIFxuICAgICAgICAgICAgICAgZ3JwLm1pbj1taW4oYnBzeXN0b2wpLCBcbiAgICAgICAgICAgICAgIGdycC5tYXg9bWF4KGJwc3lzdG9sKSxcbiAgICAgICAgICAgICAgIGdycC5jb3VudD0gbGVuZ3RoKGJwc3lzdG9sKSlcbnN1bW1hcnlcbiMjdGhpcyBsaW5lIHByb2R1Y2VzIHRoZSBzY2llbmNlIHNjb3JlIG1lYW5zIGFjcm9zcyBncm91cHMgYW5kIHN0b3JlcyB0aGVtIGluIHRoZSBncnAubWVhblxubXUgPC0gZGRwbHkobXlkYXRhLCBcInJhY2VcIiwgc3VtbWFyaXNlLCBncnAubWVhbj1tZWFuKGJwc3lzdG9sKSlcblxuIyN0aGlzIGxpbmUgZGlzcGxheXMgdGhlIDMgbWVhbnNcbmhlYWQobXUpXG5cblxuZ2dwbG90KG15ZGF0YSwgYWVzKHg9YnBzeXN0b2wsIGNvbG9yPXJhY2UpICkgK1xuICBnZW9tX2hpc3RvZ3JhbShmaWxsPVwid2hpdGVcIiwgcG9zaXRpb249XCJkb2RnZVwiKStcbiAgZ2VvbV92bGluZShkYXRhPW11LCBhZXMoeGludGVyY2VwdD1ncnAubWVhbiwgY29sb3I9cmFjZSksIGxpbmV0eXBlPVwiZGFzaGVkXCIpK1xuICB0aGVtZShsZWdlbmQucG9zaXRpb249XCJ0b3BcIikrXG4gIGd1aWRlcyhjb2xvcj1ndWlkZV9sZWdlbmQoXCJTQlA6XCIpKStcbiAgbGFicyh0aXRsZSA9IFwiU0JQIGJ5IGV0aG5pYyBncm91cFwiLCB5ID0gXCJGcmVxdWVuY3lcIiwgeD1cIlNCUFwiKSBcblxuYGBgIn0= --&gt;
+
+```r
+##Let&#39;s summarize the systolic blood pressure by race
 summary&lt;-ddply(mydata, &quot;race&quot;, summarise, 
                grp.mean=mean(bpsystol),
                grp.sd=sd(bpsystol),
